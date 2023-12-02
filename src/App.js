@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import { ChakraProvider, Box, Heading, VStack } from "@chakra-ui/react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <ChakraProvider>
+            <Box p={5}>
+                <Heading mb={5}>Liquidity Provider Performance</Heading>
+                <VStack spacing={4}>{/* charts */}</VStack>
+
+                <Heading my={5}>Voting Participation</Heading>
+                <VStack spacing={4}>{/* charts */}</VStack>
+
+                <Heading my={5}>Overall User Engagement</Heading>
+                <VStack spacing={4}>{/* charts */}</VStack>
+
+                <Heading my={5}>Tokenomics Overview</Heading>
+                <VStack spacing={4}>{/* charts */}</VStack>
+            </Box>
+        </ChakraProvider>
+    );
 }
 
 export default App;

@@ -2,12 +2,19 @@ import "./App.css";
 
 import { ChakraProvider, Box, Heading, VStack } from "@chakra-ui/react";
 
+import LiquidityProviderBarChart from "./components/charts/LiquidityProviderBarChart";
+
 function App() {
     return (
         <ChakraProvider>
             <Box p={5}>
                 <Heading mb={5}>Liquidity Provider Performance</Heading>
-                <VStack spacing={4}>{/* charts */}</VStack>
+                <VStack spacing={4}>
+                    <LiquidityProviderBarChart />
+                    <LiquidityProviderBarChart />
+                    <LiquidityProviderBarChart />
+                    <LiquidityProviderBarChart />
+                </VStack>
 
                 <Heading my={5}>Voting Participation</Heading>
                 <VStack spacing={4}>{/* charts */}</VStack>

@@ -3,6 +3,7 @@ import "./App.css";
 import { ChakraProvider, Box, Heading, VStack } from "@chakra-ui/react";
 
 import LiquidityProviderBarChart from "./components/charts/LiquidityProviderBarChart";
+import LiquidityProviderCardInfo from "./components/charts/LiquidityProviderCardInfo";
 
 function App() {
     return (
@@ -11,7 +12,7 @@ function App() {
                 <Heading mb={5}>Liquidity Provider Performance</Heading>
                 <VStack spacing={4}>
                     <LiquidityProviderBarChart />
-                    <LiquidityProviderBarChart />
+                    <LiquidityProviderCardInfo />
                     <LiquidityProviderBarChart />
                     <LiquidityProviderBarChart />
                 </VStack>
@@ -24,6 +25,7 @@ function App() {
 
                 <Heading my={5}>Tokenomics Overview</Heading>
                 <VStack spacing={4}>{/* charts */}</VStack>
+
             </Box>
         </ChakraProvider>
     );

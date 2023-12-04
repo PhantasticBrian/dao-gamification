@@ -3,6 +3,10 @@ import "./App.css";
 import { ChakraProvider, Box, Heading, VStack } from "@chakra-ui/react";
 
 import LiquidityProviderBarChart from "./components/charts/LiquidityProviderBarChart";
+import LiquidityProviderCardInfo from "./components/charts/LiquidityProviderCardInfo";
+import OnChainVotingChart from "./components/charts/OnChainVotingBarChart";
+import ConsensusVotingBarChart from "./components/charts/ConsensusVotingBarChart";
+import TotalDelegatesAndVotesCard from "./components/charts/TotalDelegatesAndVotes";
 import LiquidityProviderBubbleChart from "./components/charts/Bubble"; // Import the TreeSet component
 
 function App() {
@@ -12,7 +16,7 @@ function App() {
         <Heading mb={5}>Liquidity Provider Performance</Heading>
         <VStack spacing={4}>
           <LiquidityProviderBarChart />
-          <LiquidityProviderBarChart />
+          <LiquidityProviderCardInfo />
           <LiquidityProviderBarChart />
           <LiquidityProviderBarChart />
         </VStack>
@@ -23,15 +27,18 @@ function App() {
         <Heading my={5}>Overall User Engagement</Heading>
         <VStack spacing={4}>{/* charts */}</VStack>
 
-        <Heading my={5}>Tokenomics Overview</Heading>
-        <LiquidityProviderBubbleChart />
-        <VStack spacing={4}>
-          {/* Include the TreeSet component */}
-          {/* <LiquidityProviderBubbleChart /> */}
-        </VStack>
-      </Box>
-    </ChakraProvider>
-  );
+                <Heading my={5}>Tokenomics Overview</Heading>
+                <VStack spacing={4}>{/* charts */}</VStack>
+
+                <Heading my={5}>Uniswap On Chain Voting Statistics</Heading>
+                <VStack spacing={4}>
+                    <OnChainVotingChart />
+                    <ConsensusVotingBarChart />
+                    <TotalDelegatesAndVotesCard />
+                </VStack>
+            </Box>
+        </ChakraProvider>
+    );
 }
 
 export default App;

@@ -4,7 +4,8 @@ import { ChakraProvider, Box, Heading, VStack } from "@chakra-ui/react";
 
 import LiquidityProviderBarChart from "./components/charts/LiquidityProviderBarChart";
 import LiquidityProviderCardInfo from "./components/charts/LiquidityProviderCardInfo";
-import OnChainVotingChart from "./components/charts/OnChainVotingChart";
+import OnChainVotingChart from "./components/charts/OnChainVotingBarChart";
+import ConsensusVotingBarChart from "./components/charts/ConsensusVotingBarChart";
 
 function App() {
     return (
@@ -27,10 +28,11 @@ function App() {
                 <Heading my={5}>Tokenomics Overview</Heading>
                 <VStack spacing={4}>{/* charts */}</VStack>
 
-                <Heading my={5}>On Chain Voting Statistics</Heading>
-                <VStack spacing={4}>{
+                <Heading my={5}>Uniswap On Chain Voting Statistics</Heading>
+                <VStack spacing={4}>
                     <OnChainVotingChart />
-                }</VStack>
+                    <ConsensusVotingBarChart />
+                </VStack>
             </Box>
         </ChakraProvider>
     );

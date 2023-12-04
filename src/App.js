@@ -6,6 +6,7 @@ import LiquidityProviderBarChart from "./components/charts/LiquidityProviderBarC
 import LiquidityProviderCardInfo from "./components/charts/LiquidityProviderCardInfo";
 import OnChainVotingChart from "./components/charts/OnChainVotingBarChart";
 import ConsensusVotingBarChart from "./components/charts/ConsensusVotingBarChart";
+import TotalDelegatesAndVotesCard from "./components/charts/TotalDelegatesAndVotes";
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
                 <VStack spacing={4}>
                     <OnChainVotingChart />
                     <ConsensusVotingBarChart />
+                    <TotalDelegatesAndVotesCard />
                 </VStack>
             </Box>
         </ChakraProvider>

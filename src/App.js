@@ -20,6 +20,7 @@ function App() {
         <VStack spacing={4}>
           <LiquidityProviderBarChart />
           <LiquidityProviderCardInfo />
+          <LiquidityProviderBubbleChart/>
         </VStack>
 
         <Heading my={5}>UNI Votes and Delegates Over Time</Heading>

@@ -17,7 +17,7 @@ function App() {
         <VStack spacing={4}>
           <LiquidityProviderBarChart />
           <LiquidityProviderCardInfo />
-          <LiquidityProviderBarChart />
+          <LiquidityProviderBubbleChart />
           <LiquidityProviderBarChart />
         </VStack>
 

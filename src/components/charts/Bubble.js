@@ -80,7 +80,7 @@ const LiquidityProviderBubbleChart = () => {
         >
           <XAxis type="number" dataKey="consensus" />
           <YAxis type = "number" dataKey="onchain"/>
-          <ZAxis dataKey="temperature" range={[100, 200]} /> Optional: Use ZAxis for bubble size
+          <ZAxis dataKey="temperature" range={[100, 500]} /> Optional: Use ZAxis for bubble size
           <Tooltip cursor={{ strokeDasharray: "3 3" }} />
           <Legend />
           <Scatter name="Proposals" data = {data} fill={theme.colors.blue[400]} />
